@@ -1,163 +1,133 @@
-"use strict";
+// "use strict";
 
-let a = 6;
+// import {vardas,age,last} from "./script.js";
 
-switch (a) {
-    case 1:
-    case 2:
-        console.log("Number is 2");
-        break;
-    case 3:
-    case 4:
-        console.log("Number less then 5");
-        break;
-    case 5:
-        console.log("Number is 5");
-        break;
-    case 6:
-        console.log(`The number was ${a} `)
-        a = 8
-        console.log(`The number now is ${a} `)
-        break;
-    default:
-        console.log("Number is invalid")
+// console.log(vardas, age, last);
+
+
+// function hello(fname){
+
+//     console.log("hola "+fname);
+// }
+// hello("juan");
+// hello("Hablo");
+
+// //3
+
+// let name = "Petras";
+// let age = 15;
+
+// function prabegoMetai(){
+//     age++;
+//     console.log(name, age);
+// }
+// prabegoMetai(name,age);
+// prabegoMetai(name,age);
+
+// //4
+
+// function minskc(a,b,c){
+//     let x = Math.min(a,b,c);
+//     console.log(x);
+//     return x;
+// }
+// let x = minskc(8,9,12);
+
+// //5
+
+// function avarage(a,b,c){
+//     let avg = (a + b + c) / 3;
+//     console.log(avg);
+// }
+// avarage(8,9,x);
+
+// //6
+
+// let num = up(4);
+// function up(num){
+//     num++;
+//     return num;
+// }
+// console.log(num);
+
+
+const greeting = () => {
+    console.log("Holkaldfgldgld")
 }
-let fruit = 'apple';
-switch(fruit){
-    case 'apple':
-    case 'mango':
-    case 'pineapple':
-        console.log(`${fruit} is a fruit`);
-        break;
-    default:
-        console.log(`${fruit} is not a fruit`);
-        break;
+greeting();
+//1
+const avarage = (a,b,c) => {
+    let avg = (a + b + c) / 3;
+    console.log(avg);
+    return avg;
 }
+let avg = avarage(3,9,6);
+//2
 
-// Pratybos switch 1
-let num = 7;
-
-switch(num){
-    case 1:
-        console.log("Sendien yra Pirmadienis");
-        break;
-    case 2:
-        console.log("Sendien yra Antradienis");
-        break;
-    case 3:
-        console.log("Sendien yra Treciadienis");
-        break;
-    case 4:
-        console.log("Sendien yra Ketvirtadienis");
-        break;
-    case 5:
-        console.log("Sendien yra Penktadienis");
-        break;
-    case 6:
-        console.log("Sendien yra Sestadienis");
-        break;
-    case 7:
-        console.log("Sendien yra Sekmadienis");
-        break;
-    default:
-        console.log("neteisingai nurodytas skaicius");
-        break;
+const stip = (a) =>{
+    if (a > 6){
+        console.log("Negaunama stipendija")
+    }else{
+        console.log("Gaunama stipendija")
+    }
 }
-// Pratybos switch 2
+stip(avg)
+//3
 
-let men = 'spalis';
-
-switch(men){
-    case 'sausis':
-        console.log("Sitas menesis yra 1 pagal kalendoriu");
-        break;
-    case 'vasaris':
-        console.log("Sitas menesis yra 2 pagal kalendoriu");
-        break;
-    case 'kovas':
-        console.log("Sitas menesis yra 3 pagal kalendoriu ");
-        break;
-    case 'balandis':
-        console.log("Sitas menesis yra 4 pagal kalendoriu ");
-        break;
-    case 'gegužė':
-        console.log("Sitas menesis yra 5 pagal kalendoriu ");
-        break;
-    case 'birželis':
-        console.log("Sitas menesis yra 6 pagal kalendoriu");
-        break;
-    case 'liepa':
-        console.log("Sitas menesis yra 7 pagal kalendoriu");
-        break;
-    case 'rugpjūtis':
-        console.log("Sitas menesis yra 8 pagal kalendoriu");
-        break;
-    case 'rugsėjis':
-        console.log("Sitas menesis yra 9 pagal kalendoriu");
-        break;
-    case 'spalis':
-        console.log("Sitas menesis yra 10 pagal kalendoriu");
-        break;
-    case 'lapkritis':
-        console.log("Sitas menesis yra 11 pagal kalendoriu");
-        break;
-    case 'gruodis':
-        console.log("Sitas menesis yra 12 pagal kalendoriu");
-        break;
-    default:
-        console.log("neteisingai yrasytas mensio pavadinimas");
-        break;
+const name = (a) =>{
+    let names = a;
+    return names;
 }
+let names = name("Sigmondas");
 
-// 18 skaidre pratybos
+console.log(names);
 
-let score = 20;
 
-if (score > 25 || score >=30 ){
-    console.log("You got an A good job");
-}else if (score > 20 || score >=25 ) {
-    console.log("You got an B good");
-}else if (score > 15 || score >=20 ) {
-    console.log("You got an C eh");
-}else if (score > 10 || score >=15 ) {
-    console.log("You got an D need's improvement");
-}else if (score > 5 || score >=10 ) {
-    console.log("You got an E very bad");
-}else if (score > 0 || score >=5 ) {
-    console.log("You got an F Terrible");
+//4
+let login = 0;
+const greet = (a) =>{
+    login++
+    console.log("Hello " + a + " login in " + login);
 }
+greet(names,login);
+greet(names,login);
+greet(names,login);
 
-// 18 skaidre pratybos
+//5
+let vard = "Sigmonas";
+let atlyg = 700;
 
-let word = "rfdhlob";
-
-switch(word[0]){
-    case 'a':
-    case 'e':
-    case 'i':
-    case 'o':
-    case 'u':
-        word = 'A';
-        break;
-    case 'b':
-    case 'c':
-    case 'd':
-    case 'f':
-    case 'g':
-        word = 'B';
-        break;
-    case 'h':
-    case 'j':
-    case 'k':
-    case 'l':
-    case 'm':
-        word = 'C';
-        break;
-    default:
-        word = 'D';
-        break;
+const metinis = (a,b) => {
+    let metinis = a * 12;
+    console.log(b + " Uzdirba " + metinis + " Euru :) per metus");
 }
-console.log(word)
+metinis(atlyg,vard);
+
+//6
+let km = 654;
+let deg = 1.2;
+
+const kelias =(a,b) =>{
+    let kaina = a*b;
+    console.log("Kelione jums kainavo "+kaina + " Eur");
+}
+kelias(km,deg);
 
 
+//7
 
+let metai = "2023";
+
+const lyginis = (a) =>{
+    if (a % 2 == 0){
+        console.log("Lyginiai metai");
+    }else{
+        console.log("Nelyginiai metai");
+    }
+}
+lyginis(metai);
+
+
+const inpt = prompt("U smell :)");
+console.log(inpt);
+alert("Yes u do");
