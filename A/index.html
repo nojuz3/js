@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="submit" id="menu-reg">Register</button>
+    <button type="submit" id="menu-log">Log in</button>
+    <button type="submit" id="signout-button">Sign out</button>
+<!-- Register from -->
+    <div id="reg-container">
+      <h2>Registracija</h2>
+      <form class="registration-form">
+        <label for="register-email" class="form-label">Email:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="register-email"
+          aria-describedby="register-emailHelp"
+        />
+        <label for="register-password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="register-password" />
+        <button type="submit" id="register-button">Register</button>
+      </form>
+    </div>
+<!-- Log in from -->
+    <div id="log-container">
+        <h2>Log in</h2>
+        <form class="login-form">
+          <label for="login-email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="login-email"
+            aria-describedby="login-emailHelp"
+          />
+          <label for="login-password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="login-password" />
+          <button type="submit" id="login-button">Log in</button>
+        </form>
+      </div>
+
+      <div>
+        <div id="info"></div>
+      </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
